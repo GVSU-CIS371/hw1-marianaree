@@ -1,14 +1,10 @@
 <template>
-  <div v-if="isBlack" class="baseBeverage blackTea"></div>
-  <div v-else-if="isGreen" class="baseBeverage greenTea"></div>
-  <div v-else-if="isCoffee" class="baseBeverage coffee"></div>
+  <div :style="{backgroundColor: baseColor}" class="baseBeverage"></div>
 </template>
 
 <script setup lang="ts">
 type Props = {
-  isBlack: boolean;
-  isGreen: boolean;
-  isCoffee: boolean;
+  baseColor: string;
 }
 defineProps<Props>();
 </script>
@@ -23,13 +19,5 @@ defineProps<Props>();
   z-index: 300;
   /* // border-radius: 0.05em 0.05em 2.2em 2.2em; */
 }
-.greenTea {
-  background-color: #C8E6C9;
-}
-.blackTea {
-  background-color: #8B4513;
-}
-.coffee {
-  background-color: #6F4E37;
-}
+
 </style>
