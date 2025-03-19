@@ -10,7 +10,7 @@
         <Syrup />
       </template>
       <template v-slot:bottom>
-        <Base baseColor="" />
+        <Base :base-color="currentBase.color" />
       </template>
     </Contents>
   </Mug>
@@ -23,6 +23,7 @@ import Base from "./Base.vue";
 import Creamer from "./Creamer.vue";
 import Hot from "./Hot.vue";
 import Cold from "./Cold.vue";
+import { currentBase } from "../stores/beverage";
 
 
 type Props = {

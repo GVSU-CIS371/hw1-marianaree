@@ -1,5 +1,5 @@
 <template>
-  <div :style="{color: baseColor}" class="baseBeverage"></div>
+  <div :style="{ backgroundColor: currentBase.color }" class="baseBeverage"></div>
 </template>
 
 <script setup lang="ts">
@@ -7,6 +7,7 @@ type Props = {
   baseColor: string;
 }
 defineProps<Props>();
+  import { currentBase } from "../stores/beverage";
 </script>
 
 <style scoped>
@@ -17,6 +18,7 @@ defineProps<Props>();
   bottom: 0;
   animation: pour-tea 2s;
   z-index: 300;
+  background-color: currentBase-color;
   /* // border-radius: 0.05em 0.05em 2.2em 2.2em; */
 }
 
