@@ -4,5 +4,5 @@
   <script setup lang="ts"></script>
   <style>
   .blackTea {
-    background-color: #8B4513;
+    color: #8B4513;
   }</style>
