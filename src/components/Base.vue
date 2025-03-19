@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 type Props = {
-  baseColor: string;
+  /*baseColor: string;*/
 }
 defineProps<Props>();
   import { currentBase } from "../stores/beverage";
@@ -18,7 +18,6 @@ defineProps<Props>();
   bottom: 0;
   animation: pour-tea 2s;
   z-index: 300;
-  background-color: currentBase-color;
   /* // border-radius: 0.05em 0.05em 2.2em 2.2em; */
 }
 

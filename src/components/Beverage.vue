@@ -10,7 +10,7 @@
         <Syrup v-if="syrup.id !== 's1'" :syrup-color="syrup.color"/>
       </template>
       <template v-slot:bottom>
-        <Base :base-color="base.color" />
+        <Base currentBase.color />
       </template>
     </Contents>
   </Mug>
@@ -29,15 +29,6 @@ type Props = {
   base: {id: string; color: string };
   creamer: { id: string; color: string };
   syrup: { id: string; color: string };
-  /*isBlack: boolean;
-  isGreen: boolean;
-  isCoffee: boolean;
-  isMilk: boolean;
-  isCream: boolean;
-  ishalf: boolean;
-  isVanilla: boolean;
-  isCaramel: boolean;
-  isHazelnut: boolean;*/
 };
 defineProps<Props>();
 </script>
