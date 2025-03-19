@@ -1,9 +1,19 @@
 <template>
-  <div class="baseBeverage">
+  <div class="baseBeverage blackTea" v-if="isBlack">
+    <div class="baseBeverage greenTea" v-if="isGreen">
+      <div class="baseBeverage coffee" v-if="isCoffee">
+      </div>
+    </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">type Props = {
+  isBlack: boolean;
+  isGreen: boolean;
+  isCoffee: boolean;
+};
+defineProps<Props>();
+</script>
 <style scoped>
 .baseBeverage {
   position: relative;
