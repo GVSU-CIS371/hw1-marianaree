@@ -27,14 +27,14 @@ import Cold from "./Cold.vue";
 type Props = {
   isIced: boolean;
   isBlack: boolean;
-  isGreen: boolean;
+  /*isGreen: boolean;
   isCoffee: boolean;
   isMilk: boolean;
   isCream: boolean;
   ishalf: boolean;
   isVanilla: boolean;
   isCaramel: boolean;
-  isHazelnut: boolean;
+  isHazelnut: boolean;*/
 };
 defineProps<Props>();
 </script>
