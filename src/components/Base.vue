@@ -1,18 +1,13 @@
 <template>
-  <div class="baseBeverage blackTea" v-if="isBlack">
-    <div class="baseBeverage greenTea" v-if="isGreen">
-      <div class="baseBeverage coffee" v-if="isCoffee">
-      </div>
-    </div>
-  </div>
+  <div class="baseBeverage"></div>
 </template>
 
-<script setup lang="ts">type Props = {
+<script setup lang="ts">/*type Props = {
   isBlack: boolean;
   isGreen: boolean;
   isCoffee: boolean;
 };
-defineProps<Props>();
+defineProps<Props>();*/
 </script>
 <style scoped>
 .baseBeverage {
@@ -24,7 +19,7 @@ defineProps<Props>();
   z-index: 300;
   /* // border-radius: 0.05em 0.05em 2.2em 2.2em; */
 }
-.greenTea {
+/*.greenTea {
   background-color: #C8E6C9;
 }
 .blackTea {
@@ -32,5 +27,5 @@ defineProps<Props>();
 }
 .coffee {
   background-color: #6F4E37;
-}
+}*/
 </style>

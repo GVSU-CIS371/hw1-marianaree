@@ -10,7 +10,8 @@
         <Syrup />
       </template>
       <template v-slot:bottom>
-        <Base :isBlack="currentBase.id === 'b1'" :isGreen="currentBase.id === 'b2'" :isCoffee="currentBase.id === 'b3'"/>
+        <Base />
+        <BlackTea v-if="isBlack" />
       </template>
     </Contents>
   </Mug>
@@ -23,13 +24,13 @@ import Base from "./Base.vue";
 import Creamer from "./Creamer.vue";
 import Hot from "./Hot.vue";
 import Cold from "./Cold.vue";
-import { currentBase, /*currentCream, currentSyrup*/ } from "../stores/beverage";
-/*import BlackTea from "./BlackTea.vue";*/
+/*import { currentBase, currentCream, currentSyrup } from "../stores/beverage";*/
+import BlackTea from "./BlackTea.vue";
 
 type Props = {
   isIced: boolean;
-  /*isBlack: boolean;
-  isGreen: boolean;
+  isBlack: boolean;
+  /*isGreen: boolean;
   isCoffee: boolean;
   isMilk: boolean;
   isCream: boolean;
