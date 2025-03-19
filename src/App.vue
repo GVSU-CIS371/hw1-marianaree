@@ -26,7 +26,7 @@
               :value="base.id"
               v-model="currentBase"
             />
-            {{ base.id }}
+            {{ base.name }}
           </label>
         </template>
       </li>
