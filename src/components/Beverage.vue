@@ -10,7 +10,7 @@
         <Syrup />
       </template>
       <template v-slot:bottom>
-        <Base baseColor="defaultColor" />
+        <Base baseColor="" />
       </template>
     </Contents>
   </Mug>

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <Beverage :isIced="currentTemp === 'Cold'"/>
-    <Base :baseColor="currentBase.color"/>
+    <Beverage :isIced="currentTemp === 'Cold'" :baseColor="currentBase.color"/>
     <ul>
       <li>
         <template v-for="temp in temps" :key="temp">
@@ -65,7 +64,6 @@
 
 <script setup lang="ts">
 import Beverage from "./components/Beverage.vue";
-import Base from "./components/Base.vue";
 import { temps, currentTemp, bases, currentBase, creamers, currentCream, syrups, currentSyrup } from "./stores/beverage";
 </script>
 
