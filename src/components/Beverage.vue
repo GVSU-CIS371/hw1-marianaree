@@ -10,7 +10,7 @@
         <Syrup />
       </template>
       <template v-slot:bottom>
-        <Base />
+        <Base BlackTea v-if="isBlack"/>
       </template>
     </Contents>
   </Mug>
@@ -26,6 +26,15 @@ import Cold from "./Cold.vue";
 
 type Props = {
   isIced: boolean;
+  isBlack: boolean;
+  isGreen: boolean;
+  isCoffee: boolean;
+  isMilk: boolean;
+  isCream: boolean;
+  ishalf: boolean;
+  isVanilla: boolean;
+  isCaramel: boolean;
+  isHazelnut: boolean;
 };
 defineProps<Props>();
 </script>
