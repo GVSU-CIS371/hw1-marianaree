@@ -1,8 +1,10 @@
 <template>
-  <div class="syrup"></div>
+  <div class="syrup" :style="{ backgroundColor: currentSyrup }"></div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { currentSyrup } from "../stores/beverage";
+</script>
 <style lang="scss" scoped>
 .syrup {
   transform: translateY(400%);

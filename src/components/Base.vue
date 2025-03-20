@@ -1,8 +1,11 @@
 <template>
-  <div class="baseBeverage"></div>
+  <div class="baseBeverage" :style="{backgroundColor:currentBase}"></div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { currentBase } from "../stores/beverage";
+
+</script>
 
 <style scoped>
 .baseBeverage {
@@ -11,7 +14,7 @@
   height: 100%;
   bottom: 0;
   animation: pour-tea 2s;
-  z-index: 300;
+  z-index: 300; 
   /* // border-radius: 0.05em 0.05em 2.2em 2.2em; */
 }
 </style>
