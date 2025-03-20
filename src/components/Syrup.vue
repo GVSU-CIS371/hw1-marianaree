@@ -1,7 +1,5 @@
 <template>
-  <div class="syrup"></div>
-  <div v-if="currentSyrup.id === 's1'" :style="{ display: 'none' }"></div>
-    <div v-else :style="{ backgroundColor: currentSyrup.color }"></div>
+  <div class="syrup" :style="{ backgroundColor: currentSyrup }"></div>
 </template>
 
 <script setup lang="ts">

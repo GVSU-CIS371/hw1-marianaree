@@ -23,7 +23,7 @@
                 type="radio"
                 name="base"
                 :id="`r${base.id}`"
-                :value="base.id"
+                :value="base.color"
                 v-model="currentBase"
               />
               {{ base.name }}
@@ -37,7 +37,7 @@
               type="radio"
               name="cream"
               :id="`r${cream.id}`"
-              :value="cream.id"
+              :value="cream.color"
               v-model="currentCream"
             />
             {{ cream.name }}
@@ -51,7 +51,7 @@
               type="radio"
               name="syrup"
               :id="`r${syrup.id}`"
-              :value="syrup.id"
+              :value="syrup.color"
               v-model="currentSyrup"
             />
             {{ syrup.name }}
